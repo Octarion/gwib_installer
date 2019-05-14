@@ -64,7 +64,7 @@ defmodule NervesSystemX8664.MixProject do
 
   defp package do
     [
-      maintainers: ["Frank Hunleth"],
+      maintainers: ["Herman verschooten"],
       files: package_files(),
       licenses: ["Apache 2.0"],
       links: %{"Github" => "https://github.com/Herman-verschooten-bvba/#{@app}"}
