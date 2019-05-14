@@ -1,7 +1,7 @@
 defmodule NervesSystemX8664.MixProject do
   use Mix.Project
 
-  @app :nerves_system_x86_64
+  @app :gwib_installer
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
@@ -35,7 +35,7 @@ defmodule NervesSystemX8664.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "nerves-project/#{@app}"}
+        {:github_releases, "Herman-verschooten-bvba/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
@@ -67,7 +67,7 @@ defmodule NervesSystemX8664.MixProject do
       maintainers: ["Frank Hunleth"],
       files: package_files(),
       licenses: ["Apache 2.0"],
-      links: %{"Github" => "https://github.com/nerves-project/#{@app}"}
+      links: %{"Github" => "https://github.com/Herman-verschooten-bvba/#{@app}"}
     ]
   end
 
